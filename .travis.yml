@@ -5,6 +5,7 @@ rvm:
   - "2.3.1"
   - "2.2"
 script:
+  - rvm get stable
   - rvm -v
   - rvm alias list
   - ruby -v
