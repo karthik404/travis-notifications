@@ -13,5 +13,6 @@ script:
   - rvm alias list
   - ruby -v
   - rvm list
+  - ruby test.rb
 notifications:
   email: false
