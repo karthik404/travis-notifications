@@ -11,3 +11,5 @@ script:
   - rvm alias list
   - ruby -v
   - rvm list
+notifications:
+  email: false
