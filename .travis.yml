@@ -4,8 +4,9 @@ rvm:
   - "2.3"
   - "2.3.1"
   - "2.2"
-script:
+before_install:
   - rvm get stable
+script:
   - rvm -v
   - rvm alias list
   - ruby -v
