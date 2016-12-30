@@ -7,6 +7,8 @@ before_install:
   - gem install bundler
   - nvm list
   - echo "🙃"
+  - "echo '😆😭🐛🙃🤔🤗 :bug: :tada:'"
+  - "./echo-emoji.sh"
 script:
   - rvm -v
   - rvm alias list
