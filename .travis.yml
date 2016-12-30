@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - "2.3.0"
+  - "2.3.3"
 sudo: false
 before_install:
   - rvm get stable --auto-dotfiles
