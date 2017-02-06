@@ -1,19 +1,8 @@
-language: ruby
-rvm:
-  - "2.3.3"
-sudo: false
-before_install:
-  - rvm get stable --auto-dotfiles
-  - gem install bundler
-  - nvm list
-  - echo "🙃"
-  - "echo '😆😭🐛🙃🤔🤗 :bug: :tada:'"
-  - "./echo-emoji.sh"
-script:
-  - rvm -v
-  - rvm alias list
-  - ruby -v
-  - rvm list
-  - ruby test.rb
-notifications:
-  email: false
+language: java
+jdk:
+- oraclejdk8
+env:
+  global:
+  - JAVA7_HOME=/usr/lib/jvm/java-7-oracle
+
+before_script: 'echo "JAVA7_HOME: $JAVA7_HOME"'
