@@ -9,10 +9,6 @@ stages:
 
 jobs:
   include:
-    - stage: okay
-      script: /bin/true
-    - stage: okay
-      script: /bin/true
     - stage: "Jorts :two_men_holding_hands:"
       script: /bin/true
     - stage: "Jorts :two_men_holding_hands:"
@@ -21,3 +17,7 @@ jobs:
       script: /bin/true
     - stage: Jants
       script: /bin/false
+    - stage: okay
+      script: /bin/true
+    - stage: okay
+      script: /bin/true
