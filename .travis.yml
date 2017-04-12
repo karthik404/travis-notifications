@@ -1,4 +1,23 @@
-language: scala
-scala: 2.11.6
-jdk: oraclejdk8
-script: cat line-breaks.txt
+script: true
+notifications:
+  email: false
+
+stages:
+  - Jorts :two_men_holding_hands:
+  - Jants
+  - okay
+
+jobs:
+  include:
+    - stage: okay
+      script: /bin/true
+    - stage: okay
+      script: /bin/true
+    - stage: "Jorts :two_men_holding_hands:"
+      script: /bin/true
+    - stage: "Jorts :two_men_holding_hands:"
+      script: /bin/true
+    - stage: Jants
+      script: /bin/true
+    - stage: Jants
+      script: /bin/false
