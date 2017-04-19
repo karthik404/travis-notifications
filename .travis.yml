@@ -23,7 +23,7 @@ jobs:
     - stage: okay
       script: /bin/true
 
-  allowed_failures:
+  allow_failures:
     - stage: Jants
       env: FF=true
       script: /bin/false
