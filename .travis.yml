@@ -23,5 +23,5 @@ jobs:
     - stage: okay
       script: /bin/true
 
-allowed_failures:
-  env: FF=true
+  allowed_failures:
+    env: FF=true
