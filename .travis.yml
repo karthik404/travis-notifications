@@ -12,11 +12,11 @@ jobs:
     - stage: "Jorts :two_men_holding_hands:"
       script: /bin/true
     - stage: "Jorts :two_men_holding_hands:"
+      script: /bin/true
+    - stage: Jants
+      script: /bin/true
+    - stage: Jants
       env: FF=true
-      script: /bin/true
-    - stage: Jants
-      script: /bin/true
-    - stage: Jants
       script: /bin/false
     - stage: okay
       script: /bin/true
