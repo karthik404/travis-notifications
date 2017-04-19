@@ -24,4 +24,5 @@ jobs:
       script: /bin/true
 
   allowed_failures:
-    env: FF=true
+    - stage: Jants
+      env: FF=true
