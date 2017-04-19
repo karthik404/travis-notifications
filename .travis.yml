@@ -26,3 +26,4 @@ jobs:
   allowed_failures:
     - stage: Jants
       env: FF=true
+      script: /bin/false
