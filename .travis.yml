@@ -18,6 +18,12 @@ jobs:
     - stage: Jants
       env: FF=true
       script: /bin/false
+    - stage: Jants
+      env: GG=true
+      script: /bin/false
+    - stage: Jants
+      env: HH=true
+      script: /bin/false
     - stage: okay
       script: /bin/true
     - stage: okay
@@ -26,4 +32,10 @@ jobs:
   allow_failures:
     - stage: Jants
       env: FF=true
+      script: /bin/false
+    - stage: Jants
+      env: GG=true
+      script: /bin/false
+    - stage: Jants
+      env: HH=true
       script: /bin/false
