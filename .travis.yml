@@ -10,9 +10,14 @@ stages:
 jobs:
   include:
     - stage: "Jorts :two_men_holding_hands:"
+      env: FF=true
       script: /bin/true
     - stage: "Jorts :two_men_holding_hands:"
-      script: /bin/true
+      env: GG=true
+      script: /bin/false
+    - stage: "Jorts :two_men_holding_hands:"
+      env: HH=true
+      script: /bin/false
     - stage: Jants
       script: /bin/true
     - stage: Jants
@@ -23,6 +28,15 @@ jobs:
       script: /bin/false
     - stage: Jants
       env: HH=true
+      script: /bin/false
+    - stage: Jants
+      env: II=true
+      script: /bin/false
+    - stage: Jants
+      env: JJ=true
+      script: /bin/false
+    - stage: Jants
+      env: KK=true
       script: /bin/false
     - stage: okay
       script: /bin/true
@@ -30,6 +44,12 @@ jobs:
       script: /bin/true
 
   allow_failures:
+    - stage: "Jorts :two_men_holding_hands:"
+      env: GG=true
+      script: /bin/false
+    - stage: "Jorts :two_men_holding_hands:"
+      env: HH=true
+      script: /bin/false
     - stage: Jants
       env: FF=true
       script: /bin/false
@@ -38,4 +58,13 @@ jobs:
       script: /bin/false
     - stage: Jants
       env: HH=true
+      script: /bin/false
+    - stage: Jants
+      env: II=true
+      script: /bin/false
+    - stage: Jants
+      env: JJ=true
+      script: /bin/false
+    - stage: Jants
+      env: KK=true
       script: /bin/false
