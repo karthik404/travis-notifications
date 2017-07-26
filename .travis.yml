@@ -1,4 +1,4 @@
-language: shell
+language: python
 sudo: true
 dist: trusty
 services:
