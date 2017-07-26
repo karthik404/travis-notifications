@@ -1,9 +1,12 @@
 language: shell
+sudo: true
 dist: trusty
 services:
   - postgresql
 addons:
   postgresql: "9.3"
+before_install:
+  - sudo apt-get install -y postgresql-9.3-postgis-2.3
 before_script:
   - psql -c 'create database jorts;' -U postgres
   - psql -U postgres -c "create extension postgis"
