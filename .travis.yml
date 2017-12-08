@@ -1,6 +1,4 @@
 script: true
-notifications:
-  email: false
 
 stages:
   - Jorts :two_men_holding_hands:
