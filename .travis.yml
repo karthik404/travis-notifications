@@ -2,7 +2,7 @@ script: true
 
 stages:
   - name: Jorts
-    if: type = cron OR (commit_message =~ /jortleby/) OR (tag IS present AND tag =~ hello)
+    if: type = cron OR (commit_message =~ /jortleby/) OR (tag IS present AND tag =~ /^hello/)
   - Jants
   - okay
 
