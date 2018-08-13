@@ -2,7 +2,7 @@ script: true
 
 stages:
   - name: Jorts :two_men_holding_hands:
-    if: type = cron OR commit_message =~ /\[jortleby]\]/ or (tag IS present AND tag =~ /^hello[\d]+/)
+    if: type = cron OR commit_message =~ /\[jortleby\]/ or (tag IS present AND tag =~ /^hello[\d]+/)
   - Jants
   - okay
 
