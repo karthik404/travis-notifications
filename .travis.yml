@@ -1,14 +1,14 @@
 script: true
 
 stages:
-  - name: Jorts :two_men_holding_hands:
-    if: type = cron OR commit_message =~ /\[jortleby\]/ OR tag IS present
+  - name: Jorts
+    if: type = cron OR (commit_message =~ /\[jortleby\]/) OR (tag IS present AND tag =~ /^hello$/)
   - Jants
   - okay
 
 jobs:
   include:
-    - stage: "Jorts :two_men_holding_hands:"
+    - stage: Jorts
       script: /bin/true
     - stage: Jants
       script: /bin/true
