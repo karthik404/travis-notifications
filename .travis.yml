@@ -14,7 +14,7 @@ jobs:
     - stage: Jants
       script: /bin/true
     - stage: okay
-      script: /bin/true
+      script: /bin/false
 
 notifications:
   slack:
