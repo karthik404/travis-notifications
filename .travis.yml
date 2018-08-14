@@ -1,5 +1,5 @@
 language: generic
-script: true
+script: false
 
 stages:
   - name: Jorts
