@@ -14,3 +14,7 @@ jobs:
       script: /bin/true
     - stage: okay
       script: /bin/true
+
+notifications:
+  slack:
+    secure: TzIbXPviKC6saRuSQKQ0BShc/4KL281Ztz8RBcv5GXTvpojghShcl1lmdLU90kpMmJc4OTaKPIxLcVBEFf+1aIrYrp1Gywt+WHSRRP+JmlbZb8lJ14e2axhu6BXxn/nS0faMZLFp7AIPS5s1+V3aK23ylw3rfB48curpL2OuVzA3cq8apDFaeEGMO8m2VcbeSRtCzIaVvVCpVgQVicrjoAca6lYwOdU9GgfqddayustAu6nB/DdgS06wekwllh9Gu0z6EJH5d+okPEQsPiaGRXbnw+uHmFu53zEb/q3X08eXQuXasQl/Ygcv1KkrSjCl8tKSqOlAURMl4i2M6OzXeQ7MSMFIYNnNbNglLOS3pvwA/8y5TgqpaRx/gtv/3Lf9SW0yzxIA/NhL0B8vQJiUuov4aqliOhm0B7nv9+DhYkHz/sRQY+6+VOwaF8FdEe4YERwu8SVj3TaGOszV1tkfJtHu5WB2Eu0JFxKLZuRJy4BBAXOO2RC3kY0PPiX9VjV0dwi25gmxwv4bvec+E4bX3+xp48qPMKCv7hsy/396uXWmBr6pbflJ34peHQ5XKP0LjFzRhXVIs5V190AUVwXqz1G1bDQrbHZlouFEwZbtxSeGT5iLm2VJXrswF4FD4wTB8eaIFWCdpa/yzRaxGt5lbcaHh+ElDkhSqkaVwJ0R+6c=
