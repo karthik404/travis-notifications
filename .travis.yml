@@ -7,8 +7,6 @@ stages:
   - Jants
   - okay
 
-jortle: tortle
-
 jobs:
   include:
     - stage: Jorts
