@@ -2,19 +2,16 @@ language: generic
 script: false
 
 stages:
-  - name: Jorts
-    if: type = cron OR (commit_message =~ /jortleby/) OR (tag IS present AND tag =~ /^hello/)
   - Jants
-  - okay
 
 jobs:
   include:
-    - stage: Jorts
-      script: /bin/true
     - stage: Jants
       script: /bin/true
-    - stage: okay
-      script: /bin/false
+      env: TORTLE=skortle
+    - stage: Jants
+      script: /bin/true
+      env: SKORTLE=tortle
 
 notifications:
   slack:
